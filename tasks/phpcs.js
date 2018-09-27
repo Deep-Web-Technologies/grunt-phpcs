@@ -48,6 +48,10 @@ module.exports = function(grunt) {
         files = files.filter(function(file, position) {
             return !position || file !== files[position - 1];
         });
+        
+        if (files.length === 0) {
+            return console.log("No Files specified");
+        }
 
         // generates parameters
         parameters = Object.keys(options).map(function(option) {
