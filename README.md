@@ -4,7 +4,7 @@
 
 _This plugin is developed for Grunt `0.4.0` and is not tested for backward compatibility with Grunt `0.3.x`._
 
-##Getting Started
+## Getting Started
 1. Install this grunt plugin with the following command:
 
 	```shell
@@ -19,12 +19,12 @@ _This plugin is developed for Grunt `0.4.0` and is not tested for backward compa
 	grunt.loadNpmTasks('grunt-phpcs');
 	```
 
-##PHP Code Sniffer task
+## PHP Code Sniffer task
 _Run this task with the `grunt phpcs` command._
 
 Task targets, files and options may be specified according to the grunt [Configuring tasks](http://gruntjs.com/configuring-tasks) guide.
 
-###Usage Example
+### Usage Example
 
 ```js
 phpcs: {
@@ -59,41 +59,41 @@ grunt.initConfig({
 });
 ```
 
-###Options
-####bin
+### Options
+#### bin
 Type: `String`  Default: `'phpcs'`
 
-####maxBuffer
+#### maxBuffer
 Type: `Number` Default: `200*1024`
 
 Set the buffer size.
 
-####verbose
+#### verbose
 Type: `Boolean` Default: `false`
 
 Output more verbose information.
 
-####showSniffCodes
+#### showSniffCodes
 Type: `Boolean` Default: `false`
 
 Show sniff codes in all reports.
 
-####severity
+#### severity
 Type: `Integer` Default: `false`
 
 The minimum severity required to display an error or warning.
 
-####warningSeverity
+#### warningSeverity
 Type: `Integer` Default: `false`
 
 The minimum severity required to display a warning.
 
-####errorSeverity
+#### errorSeverity
 Type: `Integer` Default: `false`
 
 The minimum severity required to display an error.
 
-####standard
+#### standard
 Type: `String`  Default: `false`
 
 Define the standard to use.
@@ -103,12 +103,17 @@ Type: `String` Default: `false`
 
 Report types and options
 
-####reportFile
+#### reportFile
 Type: `String` Default: `false`
 
 Log report to the file.
 
-####tabWidth
+#### tabWidth
 Type: `Integer` Default: `false`
 
 Automatically convert tabs to the specified number of spaces when sniffing.
+
+#### force
+Type: `Boolean` Default: `false`
+
+Continue running grunt in the event of failures.
